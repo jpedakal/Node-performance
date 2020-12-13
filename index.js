@@ -2,9 +2,9 @@ const cluster = require('cluster');
 
 if (cluster.isMaster) {
     cluster.fork();
-    cluster.fork();
-    cluster.fork();
-    cluster.fork();
+    // cluster.fork();
+    // cluster.fork();
+    // cluster.fork();
 } else {
     const express = require('express');
     const app = express();
